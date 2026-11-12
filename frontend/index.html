@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haber Takip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Haber Takip Sistemi</h1>
+    </header>
+
+    <main>
+        <form id="filtre">
+            <select name="kategori">
+                <option value="">Tüm kategoriler</option>
+                <option value="genel">Genel</option>
+                <option value="spor">Spor</option>
+                <option value="ekonomi">Ekonomi</option>
+                <option value="siyaset">Siyaset</option>
+                <option value="asayiş">Asayiş</option>
+                <option value="doğa">Doğa</option>
+                <option value="sağlık">Sağlık</option>
+                <option value="teknoloji">Teknoloji</option>
+            </select>
+
+            <select name="sehir">
+                <option value="">Tüm şehirler</option>
+                <option value="istanbul">İstanbul</option>
+                <option value="ankara">Ankara</option>
+                <option value="izmir">İzmir</option>
+                <option value="bursa">Bursa</option>
+                <option value="antalya">Antalya</option>
+                <option value="adana">Adana</option>
+                <option value="konya">Konya</option>
+                <option value="gaziantep">Gaziantep</option>
+                <option value="trabzon">Trabzon</option>
+                <option value="erzurum">Erzurum</option>
+            </select>
+
+            <label>Başlangıç <input type="date" name="baslangic"></label>
+            <label>Bitiş <input type="date" name="bitis"></label>
+
+            <button type="submit">Filtrele</button>
+        </form>
+
+        <p id="sayac"></p>
+        <ul id="liste"></ul>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
